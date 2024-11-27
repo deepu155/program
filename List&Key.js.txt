@@ -1,0 +1,27 @@
+import React from "react";
+import Student from "./student";
+const App = () => {
+  const students = [
+    { id: 1, name: "Mohammed Faiqh.B", age: 20 },
+    { id: 2, name: "Han", age: 19 },
+  ];
+  return (
+    <div>
+      {students.map(({ id, name, age }) => 
+      (
+        <Student key={id} stName={name} stAge={age} />
+      )
+      )}
+    </div>
+  );
+};
+export default App;
+# create the other file name "student.js" and write the code
+import React from "react";
+const Student = ({ stName, stAge }) => (
+  <div>
+    <h1>Student Info</h1>
+    <h4>Name: {stName} | Age: {stAge}</h4>
+  </div>
+);
+export default Student;

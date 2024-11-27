@@ -1,0 +1,11 @@
+1) use Student
+2) db.createCollection('studentinfo')
+3)show collections
+4)db.studentinfo.insertOne({})
+5)db.studentinfo.insertMany([{},{}])
+6)db.studentinfo.find({})
+7)db.studentinfo.findOne({})
+8)db.studentinfo.updateOne({},{$set:{}})
+9)db.studentinfo,deleteOne({})
+10)db.studentinfo.deleteMany({},{})
+11)show dbs
